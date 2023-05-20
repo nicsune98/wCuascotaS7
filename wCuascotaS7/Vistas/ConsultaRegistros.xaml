@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wCuascotaS7.Vistas.ConsultaRegistros"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame BackgroundColor="#0048BD" Padding="18" CornerRadius="0">
+                <Label Text="Lista de Estudiantes" HorizontalTextAlignment="Center" TextColor="White" FontSize="16"/>
+            </Frame>
+            <ListView x:Name="listaEstudinates" ItemSelected="listaEstudinates_ItemSelected">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <TextCell Text="{Binding Nombre}" Detail="{Binding Usuario}" TextColor="Black" DetailColor="Gray"/>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+            <Button x:Name="btSalir" Text="SALIR" Clicked="btSalir_Clicked" BackgroundColor="#2196F3"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

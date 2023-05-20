@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="wCuascotaS7.Vistas.Registro"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="False">
+    <ContentPage.Content>
+        <StackLayout VerticalOptions="Center">
+            <Image Source="registro.png" WidthRequest="150" HeightRequest="150"/>
+            <Entry x:Name="txtNombre" Placeholder="Nombre" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" PlaceholderColor="Gray" TextColor="Black"/>
+            <Entry x:Name="txtContrasena" Placeholder="Contraseña" IsPassword="True" PlaceholderColor="Gray" TextColor="Black"/>
+            <Button x:Name="btRegistrar" Text="REGISTRAR" Clicked="btRegistrar_Clicked" BackgroundColor="#2196F3"/>
+            <Button x:Name="brregresar" Text="REGRESAR" Clicked="brregresar_Clicked" BackgroundColor="#0048BD"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
